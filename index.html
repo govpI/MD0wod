@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="herb.svg">
     <title>mDowód</title>
-    <link rel="stylesheet" href="../fonts.googleapis.com/css78ac.css?family=Roboto:400,500&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: Normal;
             margin: 0;
             padding: 0;
             background-color: #f7f8fc;
@@ -30,8 +31,8 @@
             width: 100%;
             background-color: #fff;
             position: sticky;
-            top: 0;
             z-index: 1000;
+            top: 0;
             box-sizing: border-box;
         }
         .header {
@@ -48,7 +49,7 @@
             height: 20px;
         }
         .header h1 {
-            font-family: 'Roboto Medium', 'Roboto', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             font-size: 18px;
             margin: 0;
             text-align: center;
@@ -112,11 +113,10 @@
             background-size: cover;
             border-radius: 12px;
             width: 100%;
-            height: 457px;
-            margin: 0 auto 40px;
+            height: 420px;
+            margin: 0 auto 20px;
             opacity: 0.88;
             background-color: #ffffff;
-            box-shadow: 4px 16px 36px 0px rgba(178, 178, 178, 0.35);
             box-sizing: border-box;
         }
         .document-images {
@@ -130,9 +130,24 @@
             box-sizing: border-box;
         }
         .user-photo {
+            position: relative;
+            border-radius: 7px;
             width: 135px;
-            height: auto;
-            margin-bottom: 10px; /* Reduced space */
+            height: 180px;
+            margin-bottom: 0px; /* Reduced space */
+        }
+
+        .user-photo:after {
+            border-radius: 12px;
+            content: '';
+            top:0; left:0; right:0; bottom:0;
+            opacity: 0.88;
+            position: absolute;
+            -webkit-box-shadow: inset 0px 0px 5px 5px #ffffff;
+            -moz-box-shadow: inset 0px 0px 5px 5px #ffffff;
+            -ms-box-shadow: inset 0px 0px 5px 5px #ffffff;
+            -o-box-shadow: inset 0px 0px 5px 5px #ffffff;
+            box-shadow: inset 0px 0px 5px 5px #ffffff;
         }
         .flag {
             width: 80px;
@@ -161,8 +176,9 @@
             height: auto;
         }
         .text {
-            font-family: 'Roboto', sans-serif;
-            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 550;
+            font-size: 10px;
             color: #7A7D83;
             text-align: left;
         }
@@ -181,17 +197,18 @@
             background-color: transparent;
         }
         .label {
-            font-family: "Roboto Medium", "Roboto", sans-serif;
-            font-weight: 500;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
             color: #1d1d1d;
-            font-size: 17px;
+            font-size: 16px;
         }
         .description {
             color: #4a4a4a;
-            font-size: 14px;
-            margin-bottom: 15px;
+            font-size: 10.5px;
+            font-weight: 650;
+            margin-bottom: 22px;
             display: block;
         }
         .validity {
@@ -199,14 +216,15 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 72px;
+            height: 60px;
             border-radius: 0 0 12px 12px;
             background-color: #ffffff;
             box-sizing: border-box;
             display: flex;
             align-items: center;
+            z-index: 1;
             padding: 0 16px;
-            box-shadow: 4px 16px 36px 0px rgba(178, 178, 178, 0.35);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* More visible shadow */
         }
         .validity-icon {
             width: 32px;
@@ -214,16 +232,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 16px;
+            margin-left: 0px;
+            margin-right: 16px;
         }
         .validity-text {
-            font-family: "Roboto Medium", "Roboto", sans-serif;
-            font-weight: 500;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 650;
             color: #598527;
             font-size: 14px;
         }
         .actions {
             display: flex;
+            font-weight: 650;
             flex-direction: column;
             gap: 16px;
             margin-bottom: 16px;
@@ -268,24 +288,25 @@
             color: #4a4a4a;
         }
         .last-update .last-update-date {
-            font-family: "Roboto Medium", "Roboto", sans-serif;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
             font-size: 16px;
             color: #1d1d1d;
         }
         #aktualizuj {
-            width: 120px;
-            height: 40px;
-            padding: 8px 24px;
+            width: 100px;
+            height: 35px;
             border-radius: 24px;
             background-color: #dbeaf9;
             box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
             color: #014a93;
             text-align: center;
             line-height: normal;
             letter-spacing: 0.2px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 12px;
             border: none; /* Remove the border */
         }
         #get-orientation {
@@ -309,6 +330,7 @@
             border-radius: 12px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* More visible shadow */
             font-size: 18px;
+            font-weight: 600;
             margin-top: 16px; /* Added margin for spacing */
             color: red; /* Set text color to red */
         }
@@ -325,6 +347,7 @@
         .bottom-nav {
             position: fixed;
             bottom: 0;
+            z-index: 9999;
             width: 100%;
             background-color: #f5f6fa; /* Updated background color */
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
@@ -351,7 +374,7 @@
             color: #014a93;
         }
         .spacer {
-            height: 80px; /* Spacer height to add more space under navigation */
+            height: 30px; /* Spacer height to add more space under navigation */
             background-color: #f5f6fa; /* Match the background color of the navigation */
         }
 
@@ -389,7 +412,7 @@
                 <img src="righticon.svg" alt="Right Icon" id="right-icon">
             </div>
         </div>
-        <div class="info-section blue" id="blue-section" style="display: none;">
+        <div class="icon-section blue" id="blue-section" style="display: none;">
             <p>
                 <img src="normal_u391.svg" alt="Info Icon">
                 A kiedy skorzystasz z mDowodu
@@ -407,7 +430,9 @@
         </div>
         <div class="document-section">
             <div class="document-images">
+                <div class="user-photo">
                 <img src="photo.jpg" alt="User Photo" class="user-photo"> <!-- Updated photo -->
+                </div>
                 <img src="flaga.gif" alt="Animated Flag" class="flag">
                 <div class="republic">
                     <div class="eagle-container" id="eagle-container">
