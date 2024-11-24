@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-
+<!-- lixzz -->
 <!-- Mirrored from mdwd.cba.pl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 11:50:16 GMT -->
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 16px;
             box-sizing: border-box;
-            padding-bottom: 100px; /* Adjusted space for the fixed bottom bar */
+            padding-bottom: 30px; /* Adjusted space for the fixed bottom bar */
         }
         .header-container {
             width: 100%;
@@ -152,18 +152,18 @@
         .flag {
             width: 80px;
             height: auto;
-            margin-bottom: 10px; /* Reduced space */
+            margin-bottom: 2px; /* 10px Reduced space */
         }
         .republic {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 5px; /* 8px */
         }
         .eagle-container {
             position: relative;
-            width: 30px;
-            height: 34px;
-            background: #c8c9cd;
+            width: 30px; /* 30px */
+            height: 34px; /* 34px */
+            background: transparent; /* #c8c9cd */
             border-radius: 0 0 10px 10px;
             display: flex;
             align-items: center;
@@ -179,6 +179,7 @@
             font-family: 'Open Sans', sans-serif;
             font-weight: 550;
             font-size: 10px;
+            padding-bottom: 3.5px;
             color: #7A7D83;
             text-align: left;
         }
@@ -345,22 +346,24 @@
             object-fit: contain; /* Ensures icons are not stretched */
         }
         .bottom-nav {
-            position: fixed;
+            position: sticky;
             bottom: 0;
             z-index: 9999;
             width: 100%;
             background-color: #f5f6fa; /* Updated background color */
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: space-around;
             padding: 10px 0 35px 0; /* Adjusted padding for more space */
             box-sizing: border-box;
+            justify-content: space-evenly;
         }
         .bottom-nav-item {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-left: -12px;
             font-size: 12px;
+            font-weight: 600;
             color: #888;
             margin-top: 10px; /* Added margin to position items at the top */
         }
@@ -374,7 +377,7 @@
             color: #014a93;
         }
         .spacer {
-            height: 30px; /* Spacer height to add more space under navigation */
+            height: 0px; /* Spacer height to add more space under navigation */
             background-color: #f5f6fa; /* Match the background color of the navigation */
         }
 
@@ -436,7 +439,7 @@
                 <img src="flaga.gif" alt="Animated Flag" class="flag">
                 <div class="republic">
                     <div class="eagle-container" id="eagle-container">
-                        <img src="eagle.gif" alt="Eagle" class="eagle" id="republic-icon">
+                        <img src="eagle.png" alt="Eagle" class="eagle" id="republic-icon">
                     </div>
                     <div class="text">
                         Rzeczpospolita<br>Polska
@@ -635,4 +638,5 @@
 </body>
 
 <!-- Mirrored from mdwd.cba.pl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 11:50:39 GMT -->
+<!-- lixzz -->
 </html>
