@@ -51,10 +51,10 @@
         .header h1 {
             font-family: 'Open Sans', sans-serif;
             font-size: 18px;
+            font-weight: 700;
             margin: 0;
             text-align: center;
             color: #2f353f;
-            font-weight: normal;
             flex-grow: 1;
         }
         .time {
@@ -70,7 +70,7 @@
             margin-bottom: 16px;
             color: #2f353f;
             position: relative;
-            transition: transform 0s;
+            transition: transform 0.5s;
         }
         .info-section.blue {
             background-color: #dfecf9;
@@ -131,7 +131,7 @@
         }
         .user-photo {
             position: relative;
-            border-radius: 7px;
+            border-radius: 8px;
             width: 135px;
             height: 180px;
             margin-bottom: 0px; /* Reduced space */
@@ -143,11 +143,11 @@
             top:0; left:0; right:0; bottom:0;
             opacity: 0.88;
             position: absolute;
-            -webkit-box-shadow: inset 0px 0px 5px 5px #ffffff;
-            -moz-box-shadow: inset 0px 0px 5px 5px #ffffff;
-            -ms-box-shadow: inset 0px 0px 5px 5px #ffffff;
-            -o-box-shadow: inset 0px 0px 5px 5px #ffffff;
-            box-shadow: inset 0px 0px 5px 5px #ffffff;
+            -webkit-box-shadow: inset 0px 0px 4px 5px #ffffff;
+            -moz-box-shadow: inset 0px 0px 4px 5px #ffffff;
+            -ms-box-shadow: inset 0px 0px 4px 5px #ffffff;
+            -o-box-shadow: inset 0px 0px 4px 5px #ffffff;
+            box-shadow: inset 0px 0px 4px 5px #ffffff;
         }
         .flag {
             width: 80px;
@@ -412,7 +412,7 @@
                 <img src="righticon.svg" alt="Right Icon" id="right-icon">
             </div>
         </div>
-        <div class="icon-section blue" id="blue-section" style="display: none;">
+        <div class="icon-section blue" id="info-section" style="display: none;">
             <p>
                 <img src="normal_u391.svg" alt="Info Icon">
                 A kiedy skorzystasz z mDowodu
@@ -421,8 +421,8 @@
                 We wszystkich innych sytuacjach – na przykład w urzędzie, sądzie, przychodni, na poczcie czy u notariusza.
             </p>
             <div class="center-icons">
-                <img src="lefticon.svg" alt="Right Icon" id="right-icon-blue">
-                <img src="righticon.svg" alt="Left Icon" id="left-icon-blue">
+                <img src="lefticon.svg" alt="Left Icon" id="left-icon">
+                <img src="righticon.svg" alt="Right Icon" id="right-icon">
             </div>
             <div class="close-icon" id="close-icon">
                 <img src="close.svg" alt="Close Icon">
